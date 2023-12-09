@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Manage landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="relative container mx-auto p-6">
+    <div class="flex items-center justify-between">
+
+      <!-- Logo -->
+      <div class="pt-2">
+        <img src="./images/logo.svg" alt="">
+      </div>
+
+      <!-- Link list -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#" class="hover:text-DarkGrayishBlue">Pricing</a>
+        <a href="#" class="hover:text-DarkGrayishBlue">Product</a>
+        <a href="#" class="hover:text-DarkGrayishBlue">About Us</a>
+        <a href="#" class="hover:text-DarkGrayishBlue">Careers</a>
+        <a href="#" class="hover:text-DarkGrayishBlue">Community</a>
+      </div>
+
+      <!-- button -->
+      <a href="#"
+        class="hidden md:block py-3 px-8 bg-BrightRed text-white rounded-full baseline hover:bg-BrightRedLight">Get
+        Started</a>
+
+      <!-- Hamburger icon -->
+      <button id="menu-btn" class="block hamburger open mt-20 ml-4 md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="md:hidden">
+      <div id="menu"
+        class="flex flex-col items-center self-end group-aria-hidden: py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:w-self-center left-6 right-6 drop-shadow-md">
+        <a href="#" class="hover:text-DarkGrayishBlue">Pricing</a>
+        <a href="#" class="hover:text-DarkGrayishBlue">Product</a>
+        <a href="#" class="hover:text-DarkGrayishBlue">About Us</a>
+        <a href="#" class="hover:text-DarkGrayishBlue">Careers</a>
+        <a href="#" class="hover:text-DarkGrayishBlue">Community</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- first section -->
+  <section id="hero" class="relative container mx-auto">
+    <div
+      class="flex flex-col-reverse my-10 items-center justify-between p-6 mt-10 mx-auto space-y-0 md:flex-row md:space-y-0 md:items-start">
+
+      <!-- flex one -->
+      <div class="flex flex-col space-y-12 md:w-1/2">
+        <h1 class="max-w-md text-4xl font-bold text-center mb-6 md:text-5xl md:text-left">Bring everyone together to
+          build better products.</h1>
+        <p class="max-w-md text-center text-DarkGrayishBlue md:text-left">
+          Manage makes it simple for software teams to plan day-to-day
+          tasks while keeping the larger team goals in view.
+        </p>
+        <div class="flex justify-center md:justify-start">
+          <a href="#" class="py-3 px-8 bg-BrightRed text-white rounded-full baseline hover:bg-BrightRedLight">Get
+            Started</a>
+        </div>
+      </div>
+
+      <!-- flex two -->
+      <div class="max-w-md md:w-1/2">
+        <img src="./images/illustration-intro.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- second section -->
+  <section id="features" class="relative container mx-auto ">
+    <div
+      class="flex flex-col my-10 p-6 items-center justify-between mx-auto space-y-0 md:flex-row md:space-y-0 md:items-start">
+
+      <!-- first part -->
+      <div class="flex flex-col space-y-6 mb-12 md:w-1/2 md:mb-1">
+        <h2 class="max-w-md text-4xl font-bold text-center md:text-left md:mb-0">
+          What’s different about Manage?
+        </h2>
+        <p class="max-w-md text-center text-DarkGrayishBlue md:text-left">
+          Manage provides all the functionality your team needs, without
+          the complexity. Our software is tailor-made for modern digital
+          product teams.
+        </p>
+      </div>
+
+      <!-- second part -->
+      <div class="space-y-12 max-w-md md:w-1/2">
+
+        <!-- first item -->
+        <div class="flex flex-col space-y-3">
+          <div class="rounded-l-full font-bold bg-BrightRedSupLight md:bg-transparent">
+            <div class="flex flex-row items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-BrightRed">
+                01
+              </div>
+              <h3 class="text-base pr-6 font-bold md:mb-4 md:hidden">
+                Track company-wide
+                progress
+              </h3>
+            </div>
+          </div>
+          <h3 class="hidden mb-4 text-lg font-bold md:block">
+            Track company-wide
+            progress
+          </h3>
+          <p class="text-DarkGrayishBlue">
+            See how your day-to-day tasks fit into the wider vision. Go from
+            tracking progress at the milestone level all the way done to the
+            smallest of details. Never lose sight of the bigger picture again.
+          </p>
+        </div>
+
+        <!-- second item -->
+        <div class="flex flex-col space-y-3">
+          <div class="rounded-l-full font-bold bg-BrightRedSupLight md:bg-transparent">
+            <div class="flex flex-row items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-BrightRed">
+                02
+              </div>
+              <h3 class="text-base pr-6 font-bold md:mb-4 md:hidden">
+                Advanced built-in reports
+              </h3>
+            </div>
+          </div>
+          <h3 class="hidden mb-4 text-lg font-bold md:block">
+            Track company-wide
+            progress
+          </h3>
+          <p class="text-DarkGrayishBlue">
+            Set internal delivery estimates and track progress toward company
+            goals. Our customisable dashboard helps you build out the reports
+            you need to keep key stakeholders informed.
+          </p>
+        </div>
+
+        <!-- third item -->
+        <div class="flex flex-col space-y-3">
+          <div class="rounded-l-full font-bold bg-BrightRedSupLight md:bg-transparent">
+            <div class="flex flex-row items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-BrightRed">
+                03
+              </div>
+              <h3 class="text-base pr-6 font-bold md:mb-4 md:hidden">
+                Advanced built-in reports
+              </h3>
+            </div>
+          </div>
+          <h3 class="hidden mb-4 text-lg font-bold md:block">
+            Everything you need in one place
+            progress
+          </h3>
+          <p class="text-DarkGrayishBlue">
+            Stop jumping from one service to another to communicate, store files,
+            track tasks and share documents. Manage offers an all-in-one team
+            productivity solution.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Third section -->
+  <section id="rating">
+    <div class="flex justify-center text-center text-4xl font-bold text-VeryDarkBlue my-24">
+      What they’ve said
+    </div>
+  </section>
+
+  <!-- Forth section -->
+  <section id="testimonials">
+    <div
+      class="flex flex-col my-10 mt-10 items-center mx-auto space-y-12 space-x-6 md:space-y-0 md:flex-row md:items-start">
+
+      <!-- first testimonial -->
+      <div
+        class="hidden flex-col items-center text-center rounded-lg bg-VeryLightGray p-6 ml-6 md:w-1/3 md:ml-0 md:flex">
+        <div class="rounded-full w-16 -mt-14">
+          <img src="./images/avatar-anisha.png" alt="">
+        </div>
+        <h3 class="py-6 text-lg font-bold">Anisha Li</h3>
+        <p class="text-sm text-DarkGrayishBlue">
+          “Manage has supercharged our team’s workflow. The ability to maintain
+          visibility on larger milestones at all times keeps everyone motivated.”
+        </p>
+      </div>
+
+      <!-- second testimonial -->
+      <div class="flex flex-col items-center text-center rounded-lg bg-VeryLightGray p-6 md:w-1/3">
+        <div class="rounded-full w-16 -mt-14">
+          <img src="./images/avatar-ali.png" alt="">
+        </div>
+        <h3 class="py-6 text-lg font-bold">Ali Bravo</h3>
+        <p class="text-sm text-DarkGrayishBlue">
+          “We have been able to cancel so many other subscriptions since using
+          Manage. There is no more cross-channel confusion and everyone is much
+          more focused.”
+        </p>
+      </div>
+
+      <!-- Third testimonial -->
+      <div class="hidden flex-col items-center text-center rounded-lg bg-VeryLightGray p-6 md:w-1/3 md:flex">
+        <div class="flex w-16 -mt-14">
+          <img src="./images/avatar-richard.png" alt="">
+        </div>
+        <h3 class="py-6 text-lg font-bold">Richard Watts</h3>
+        <p class="text-sm text-DarkGrayishBlue">
+          “Manage allows us to provide structure and process. It keeps us organized
+          and focused. I can’t stop recommending them to everyone I talk to!”
+        </p>
+      </div>
+
+      <!-- Forth testimonial -->
+      <div class="hidden flex-col items-center text-center rounded-lg bg-VeryLightGray p-6 md:w-1/3">
+        <div class="rounded-full w-16 -mt-14">
+          <img src="./images/avatar-anisha.png" alt="">
+        </div>
+        <h3 class="py-6 text-lg font-bold">Shanai Gough</h3>
+        <p class="text-sm text-DarkGrayishBlue">
+          “Their software allows us to track, manage and collaborate on our projects
+          from anywhere. It keeps the whole team in-sync without being intrusive.”
+        </p>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="flex justify-center items-center my-16">
+      <a href="#" class="py-3 px-8 bg-BrightRed text-white rounded-full baseline hover:bg-BrightRedLight">Get
+        Started</a>
+    </div>
+
+  </section>
+
+  <!-- Fifth section -->
+  <section id="call-to-action" class="bg-BrightRed">
+    <div
+      class="container flex flex-col my-10 px-6 py-24 items-center justify-between mx-auto space-y-6 md:py-12 md:flex-row ">
+      <h1 class="text-center items-center text-3xl text-white font-bold">
+        Simplify how your team works today.
+      </h1>
+
+      <!-- button -->
+      <div class="flex justify-center items-center my-16">
+        <a href="#"
+          class="py-3 px-8 bg-white text-BrightRed font-bold rounded-full baseline hover:text-BrightRedLight">Get
+          Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-VeryDarkBlue">
+    <!-- container -->
+    <div class="container flex flex-col-reverse items-center justify-around -mt-10 
+      px-6 py-10 mx-auto space-y-1 md:space-y-0 md:items-start md:flex-row">
+      <!-- Copyright -->
+      <div class="text-DarkGrayishBlue mt-16 -mb-10 md:hidden">
+        <p>Copyright 2020. All Rights Reserved</p>
+      </div>
+      <!-- logo and social media -->
+      <div class="flex flex-col-reverse items-center justify-between md:flex-col">
+        <div class="pt-20 md:pt-0">
+          <img src="./images/logo.svg" alt="logo" class="h-8">
+        </div>
+        <div class="flex flex-row space-x-12 pt-10 md:pt-20 md:space-x-4">
+          <a href="">
+            <svg class="h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="#ffffff" class="hover:fill-BrightRed"
+                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
+            </svg>
+          </a>
+          <a href="">
+            <svg class="h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="#ffffff" class="hover:fill-BrightRed"
+                d="M282 256.2l-95.2-54.1V310.3L282 256.2zM384 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm14.4 136.1c7.6 28.6 7.6 88.2 7.6 88.2s0 59.6-7.6 88.1c-4.2 15.8-16.5 27.7-32.2 31.9C337.9 384 224 384 224 384s-113.9 0-142.2-7.6c-15.7-4.2-28-16.1-32.2-31.9C42 315.9 42 256.3 42 256.3s0-59.7 7.6-88.2c4.2-15.8 16.5-28.2 32.2-32.4C110.1 128 224 128 224 128s113.9 0 142.2 7.7c15.7 4.2 28 16.6 32.2 32.4z" />
+            </svg>
+          </a>
+          <a href="">
+            <svg class="h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="#ffffff" class="hover:fill-BrightRed"
+                d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+            </svg>
+          </a>
+          <a href="">
+            <svg class="h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+              <path fill="#ffffff" class="hover:fill-BrightRed"
+                d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
+            </svg>
+          </a>
+          <a href="">
+            <svg class="h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="#ffffff" class="hover:fill-BrightRed"
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- Listed links -->
+      <div class="flex flex-row text-white space-x-28">
+        <div class="flex flex-col">
+          <a href="#" class="hover:text-BrightRed">Home</a>
+          <a href="#" class="hover:text-BrightRed">Pricing</a>
+          <a href="#" class="hover:text-BrightRed">Products</a>
+          <a href="#" class="hover:text-BrightRed">About Us</a>
+        </div>
+        <div class="flex flex-col">
+          <a href="#" class="hover:text-BrightRed">Careers</a>
+          <a href="#" class="hover:text-BrightRed">Community</a>
+          <a href="#" class="hover:text-BrightRed">Privacy Policy</a>
+        </div>
+      </div>
+      <!-- search bar and copyright -->
+      <div class="flex flex-col items-end">
+        <form class="flex flex-col items-end">
+          <div class="flex flex-row space-x-2 mb-4 md:mb-20">
+            <input class="rounded-full py-2 px-8 text-BrightRed focus:outline-none" type="text" name="" id="search-box"
+              placeholder="Updates in your inbox…">
+            <!-- button -->
+            <a href="#"
+              class="py-2 px-6 bg-BrightRed text-white rounded-full baseline hover:bg-BrightRedLight focus:outline-none md:px-4">Go</a>
+          </div>
+          <div class="hidden text-DarkGrayishBlue md:flex">
+            <p>Copyright 2020. All Rights Reserved</p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Steve</a>.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
